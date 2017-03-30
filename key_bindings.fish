@@ -1,3 +1,3 @@
 bind \cr '__fzy_history'
-bind \cxs '__fzy_ghq'
-bind \cxa '__fzy_open_application'
+bind \cx\cs '__fzy_ghq'
+bind \cx\ca '__fzy_open_application'
