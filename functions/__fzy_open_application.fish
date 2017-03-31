@@ -1,5 +1,5 @@
 function __fzy_open_application
-    mdfind kMDItemKind=Application | fzy | read -l select
+    mdfind 'kMDItemKind==アプリケーション' | fzy | read -l select
     if not test -z $select
         open $select
     end
