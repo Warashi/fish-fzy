@@ -1,5 +1,5 @@
 function __fzy_history
-    history | "(__fzycmd)" | read -l select
+    eval "history | "(__fzycmd)" | read -l select"
     if not test -z "$select"
         commandline -rb $select
     end
