@@ -1,3 +1,3 @@
 function __fzy_murder
-  eval "ps ax -o pid,time,command -U (whoami) | "(__fzycmd)" | awk '{print $1}' | xargs kill -9"
+  ps ax -o pid,time,command -U (whoami) | eval (__fzycmd) | awk '{print $1}' | xargs kill -9
 end
